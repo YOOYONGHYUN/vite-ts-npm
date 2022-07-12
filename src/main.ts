@@ -107,6 +107,8 @@ const Calculator: CalculatorInterface = {
 
   initEvent() {
     const btnEl = document.querySelector(".contents");
+
+    //화살표 함수를 쓰면 this를 쓸 수 있는 이유??? 조사해보기
     btnEl?.addEventListener("click", ({ target }) => {
       const btnText = (target as HTMLButtonElement).innerText;
 
